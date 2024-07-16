@@ -33,6 +33,11 @@ func (m *OrderedMap[K, V]) Get(key K) (V, bool) {
 	return value, ok
 }
 
+func (m *OrderedMap[K, V]) Has(key K) bool {
+	_, ok := m.values[key]
+	return ok
+}
+
 func (m *OrderedMap[K, V]) Del(key K) {
 	delete(m.values, key)
 	for i, k := range m.keys {
