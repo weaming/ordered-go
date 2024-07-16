@@ -1,1 +1,1 @@
-Simplest ordered map implementation in Go.
+Simplest ordered map & set implementation in Go.

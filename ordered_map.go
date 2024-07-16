@@ -1,8 +1,6 @@
-package orderedmap
+package ordered
 
-import (
-	"cmp"
-)
+import "cmp"
 
 type Key interface {
 	comparable

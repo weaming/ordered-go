@@ -1,3 +1,3 @@
-module github.com/weaming/ordered-map
+module github.com/weaming/ordered
 
 go 1.22
