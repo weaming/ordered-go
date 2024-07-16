@@ -3,7 +3,7 @@ package ordered
 import "fmt"
 
 func ExampleOrderedMap() {
-	data := New[int, string]()
+	data := NewMap[int, string]()
 	data.Set(1, "one")
 	data.Set(3, "three")
 	data.Set(2, "two")

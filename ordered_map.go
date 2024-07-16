@@ -12,7 +12,7 @@ type OrderedMap[K Key, V any] struct {
 	values map[K]V
 }
 
-func New[K Key, V any]() *OrderedMap[K, V] {
+func NewMap[K Key, V any]() *OrderedMap[K, V] {
 	return &OrderedMap[K, V]{
 		keys:   make([]K, 0),
 		values: make(map[K]V),
@@ -68,7 +68,7 @@ func (m *OrderedMap[K, V]) Clear() {
 }
 
 func (m *OrderedMap[K, V]) Clone() *OrderedMap[K, V] {
-	clone := New[K, V]()
+	clone := NewMap[K, V]()
 	for _, key := range m.keys {
 		clone.Set(key, m.values[key])
 	}

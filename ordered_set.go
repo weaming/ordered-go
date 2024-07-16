@@ -5,7 +5,7 @@ type OrderedSet[K Key] struct {
 }
 
 func NewSet[K Key]() *OrderedSet[K] {
-	return &OrderedSet[K]{New[K, bool]()}
+	return &OrderedSet[K]{NewMap[K, bool]()}
 }
 
 func (m *OrderedSet[K]) Add(key K) {
