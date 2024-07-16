@@ -1,0 +1,1 @@
+Simplest ordered map implementation in Go.
